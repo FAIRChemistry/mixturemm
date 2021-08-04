@@ -14,7 +14,12 @@
 
 ## Features
 
--   TODO
+-   Simulation of mixtures
+-   Analyses
+  -   Self-Diffusion-Coefficient
+  -   Finite size corrected Self-Diffusion-Coefficient
+  -   Viscosity
+  -   Hydrogen bonds
 
 ## Credits
 
