@@ -9,22 +9,22 @@ jobs:
         steps:
             - uses: actions/checkout@v2
             - uses: actions/setup-python@v2
+            - uses: s-weigand/setup-conda@v1
               with:
                   python-version: 3.8
             - name: Install dependencies
               run: |
-                  $CONDA/bin/conda activate base
-                  $CONDA/bin/conda install -c conda-forge openmm
-                  $CONDA/bin/conda install -c omnia packmol
-                  $CONDA/bin/conda install -c conda-forge mdanalysis
-                  $CONDA/bin/conda install -c conda-forge mdtraj
-                  $CONDA/bin/conda install -c anaconda more-itertools
-                  $CONDA/bin/conda install -c conda-forge tidynamics
+                  conda activate base
+                  conda install -c conda-forge openmm
+                  conda install -c omnia packmol
+                  conda install -c conda-forge mdanalysis
+                  conda install -c conda-forge mdtraj
+                  conda install -c anaconda more-itertools
+                  conda install -c conda-forge tidynamics
             - name: PKG-TEST
               run: |
                   python -m unittest discover tests/
-                  $CONDA/bin/conda init bash
-                  $CONDA/bin/conda activate base
+                  conda activate base
                   python -m pip install --upgrade pip
                   pip install mkdocs-material mkdocstrings mkdocs-git-revision-date-plugin mkdocs-jupyter ipykernel
                   mkdocs gh-deploy --force
