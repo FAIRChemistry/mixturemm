@@ -1,0 +1,858 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://FAIRChemistry.github.io/mixturemm/scientific/">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.6">
+    
+    
+      
+        <title>Scientific background - mixturemm</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.4a0965b7.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto Slab";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#scientific-background" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="mixturemm" class="md-header__button md-logo" aria-label="mixturemm" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M256 224c-17.6 0-32.9 14.4-32.9 32s15.3 32 32.9 32c17.63 0 32-14.38 32-32s-14.4-32-32-32zm214.2-96c-10.88-19.5-40.51-50.75-116.3-41.88C332.4 34.88 299.6 0 256 0s-76.4 34.88-97.9 86.12C82.34 77.38 52.71 108.5 41.83 128c-16.38 29.38-14.91 73.12 25.23 128-40.13 54.88-41.61 98.63-25.23 128 29.13 52.38 101.6 43.63 116.3 41.88C179.6 477.1 212.4 512 256 512s76.39-34.88 97.9-86.13C368.5 427.6 441 436.4 470.2 384c16.38-29.38 14.91-73.13-25.23-128 40.13-54.9 41.53-98.6 25.23-128zM95.34 352c-4.001-7.25-.125-24.75 15-48.25 6.876 6.5 14.13 12.87 21.88 19.12 1.625 13.75 4.001 27.13 6.751 40.13-24.671.9-39.881-4.4-43.631-11zm36.86-162.9c-7.7 6.3-15 12.7-21.9 19.1-15.08-23.4-18.96-41-14.96-48.2 3.376-6.125 16.38-11.5 37.88-11.5 1.75 0 3.876.375 5.751.375C136.1 162.2 133.8 175.6 132.2 189.1zM256 64c9.502 0 22.25 13.5 33.88 37.25C278.6 105 267.4 109.3 256 114.1c-11.4-4.8-22.6-9.1-33.9-12.9C233.7 77.5 246.5 64 256 64zm0 384c-9.502 0-22.25-13.5-33.88-37.25C233.4 407 244.6 402.7 256 397.9a437.89 437.89 0 0 0 33.88 12.89C278.3 434.5 265.5 448 256 448zm0-112c-44.13 0-80.02-35.88-80.02-80s35.92-80 80.02-80 80.02 35.88 80.02 80-35.92 80-80.02 80zm160.7 16c-3.626 6.625-19 11.88-43.63 11 2.751-12.1 5.126-26.38 6.751-40.13 7.752-6.25 15-12.63 21.88-19.12C416.8 327.2 420.7 344.8 416.7 352zm-15-143.8a368.765 368.765 0 0 0-21.88-19.12 442.887 442.887 0 0 0-6.751-40.25c1.875 0 4.001-.375 5.751-.375 21.5 0 34.51 5.375 37.88 11.5 4 7.245.1 24.845-15 48.245z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            mixturemm
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Scientific background
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/FAIRChemistry/mixturemm" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href=".." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../installation/" class="md-tabs__link">
+      Installation
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../usage/" class="md-tabs__link">
+      Usage
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  <li class="md-tabs__item">
+    <a href="./" class="md-tabs__link md-tabs__link--active">
+      Scientific background
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="https://github.com/FAIRChemistry/mixturemm/issues" class="md-tabs__link">
+      Report Issues
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../mixturemm/" class="md-tabs__link">
+        API Reference
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="mixturemm" class="md-nav__button md-logo" aria-label="mixturemm" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M256 224c-17.6 0-32.9 14.4-32.9 32s15.3 32 32.9 32c17.63 0 32-14.38 32-32s-14.4-32-32-32zm214.2-96c-10.88-19.5-40.51-50.75-116.3-41.88C332.4 34.88 299.6 0 256 0s-76.4 34.88-97.9 86.12C82.34 77.38 52.71 108.5 41.83 128c-16.38 29.38-14.91 73.12 25.23 128-40.13 54.88-41.61 98.63-25.23 128 29.13 52.38 101.6 43.63 116.3 41.88C179.6 477.1 212.4 512 256 512s76.39-34.88 97.9-86.13C368.5 427.6 441 436.4 470.2 384c16.38-29.38 14.91-73.13-25.23-128 40.13-54.9 41.53-98.6 25.23-128zM95.34 352c-4.001-7.25-.125-24.75 15-48.25 6.876 6.5 14.13 12.87 21.88 19.12 1.625 13.75 4.001 27.13 6.751 40.13-24.671.9-39.881-4.4-43.631-11zm36.86-162.9c-7.7 6.3-15 12.7-21.9 19.1-15.08-23.4-18.96-41-14.96-48.2 3.376-6.125 16.38-11.5 37.88-11.5 1.75 0 3.876.375 5.751.375C136.1 162.2 133.8 175.6 132.2 189.1zM256 64c9.502 0 22.25 13.5 33.88 37.25C278.6 105 267.4 109.3 256 114.1c-11.4-4.8-22.6-9.1-33.9-12.9C233.7 77.5 246.5 64 256 64zm0 384c-9.502 0-22.25-13.5-33.88-37.25C233.4 407 244.6 402.7 256 397.9a437.89 437.89 0 0 0 33.88 12.89C278.3 434.5 265.5 448 256 448zm0-112c-44.13 0-80.02-35.88-80.02-80s35.92-80 80.02-80 80.02 35.88 80.02 80-35.92 80-80.02 80zm160.7 16c-3.626 6.625-19 11.88-43.63 11 2.751-12.1 5.126-26.38 6.751-40.13 7.752-6.25 15-12.63 21.88-19.12C416.8 327.2 420.7 344.8 416.7 352zm-15-143.8a368.765 368.765 0 0 0-21.88-19.12 442.887 442.887 0 0 0-6.751-40.25c1.875 0 4.001-.375 5.751-.375 21.5 0 34.51 5.375 37.88 11.5 4 7.245.1 24.845-15 48.245z"/></svg>
+
+    </a>
+    mixturemm
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/FAIRChemistry/mixturemm" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/" class="md-nav__link">
+        Installation
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../usage/" class="md-nav__link">
+        Usage
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Scientific background
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Scientific background
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#box-packing" class="md-nav__link">
+    Box packing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simulation" class="md-nav__link">
+    Simulation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analysis" class="md-nav__link">
+    Analysis
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/FAIRChemistry/mixturemm/issues" class="md-nav__link">
+        Report Issues
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          API Reference
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="API Reference" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          API Reference
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mixturemm/" class="md-nav__link">
+        mixturemm module
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../background/" class="md-nav__link">
+        background modue
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tools/" class="md-nav__link">
+        tools module
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../utils/" class="md-nav__link">
+        utils module
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#box-packing" class="md-nav__link">
+    Box packing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simulation" class="md-nav__link">
+    Simulation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analysis" class="md-nav__link">
+    Analysis
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+
+
+
+                
+  <a href="https://github.com/FAIRChemistry/mixturemm/edit/master/docs/scientific.md" title="Edit this page" class="md-content__button md-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+
+<h1 id="scientific-background">Scientific background<a class="headerlink" href="#scientific-background" title="Permanent link">&para;</a></h1>
+<h2 id="box-packing">Box packing<a class="headerlink" href="#box-packing" title="Permanent link">&para;</a></h2>
+<p>The boxes to be simulated are packed with the python package <a href="http://m3g.iqm.unicamp.br/packmol">packmol</a>. This package needs as starting point the PDB files of all occurring molecules and their desired number as well as the initial side length of the box in which the molecules should be packed. For each individual box there is an input file with this information, which is automatically generated during the workflow based on the existing information of the project object. With the given total number of molecules, their proportion in the mixture and the water mole fractions, the respective molecule number is calculated, assigned to the path to the PDB file of the molecule and the box is packed with the resulting input file. The resulting PDB file of the box does not contain any CONECT entries, however OpenMM needs this topology information to assign the molecules their respective force field. Therefore, in a further step, the CONECT entries of the box are created based on the indices of the CONECT entries of the individual molecules and added to the PDB file.</p>
+<div class="admonition info">
+<p class="admonition-title">CONECT entry indices generation</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">CONECT entries of methanol</label><label for="__tabbed_1_2">CONECT entries of three molecules methanol</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>CONECT    1    2    3                                                 
+CONECT    2    1                                      
+CONECT    2                                                           
+CONECT    3    1   
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code>CONECT    1    2    3                                                 
+CONECT    2    1                                      
+CONECT    2                                                           
+CONECT    3    1   
+CONECT    4    5    6             all indices +3                                    
+CONECT    5    4                                     
+CONECT    5                                                           
+CONECT    6    4   
+CONECT    7    8    9             all indices +6                                    
+CONECT    8    7                                      
+CONECT    8                                                           
+CONECT    9    7   
+</code></pre></div></td></tr></table></div>
+</div>
+</div>
+</div>
+</div>
+<details class="example">
+<summary>Methanol/Water with 2000, 6000 and 15000 molecules and <span class="arithmatex">\(\chi_{water}\)</span> of 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9 and 1</summary>
+<table>
+<thead>
+<tr>
+<th><span class="arithmatex">\(\chi_{water}\)</span></th>
+<th>2000 molecules</th>
+<th>6000 molecules</th>
+<th>15000 molecules</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>2000 methanol, 0 water</td>
+<td>6000 methanol, 0 water</td>
+<td>15000 methanol, 0 water</td>
+</tr>
+<tr>
+<td>0.1</td>
+<td>1800 methanol, 200 water</td>
+<td>5400 methanol, 600 water</td>
+<td>13500 methanol, 1500 water</td>
+</tr>
+<tr>
+<td>0.2</td>
+<td>1600 methanol, 400 water</td>
+<td>4800 methanol, 1200 water</td>
+<td>12000 methanol, 3000 water</td>
+</tr>
+<tr>
+<td>0.3</td>
+<td>1400 methanol, 600 water</td>
+<td>4200 methanol, 1800 water</td>
+<td>10500 methanol, 4500 water</td>
+</tr>
+<tr>
+<td>0.4</td>
+<td>1200 methanol, 800 water</td>
+<td>3600 methanol, 2400 water</td>
+<td>9000 methanol, 6000 water</td>
+</tr>
+<tr>
+<td>0.5</td>
+<td>1000 methanol, 1000 water</td>
+<td>3000 methanol, 3000 water</td>
+<td>7500 methanol, 7500 water</td>
+</tr>
+<tr>
+<td>0.6</td>
+<td>800 methanol, 1200 water</td>
+<td>2400 methanol, 3600 water</td>
+<td>6000 methanol, 9000 water</td>
+</tr>
+<tr>
+<td>0.7</td>
+<td>600 methanol, 1400 water</td>
+<td>1800 methanol, 4200 water</td>
+<td>4500 methanol, 10500 water</td>
+</tr>
+<tr>
+<td>0.8</td>
+<td>400 methanol, 1600 water</td>
+<td>1200 methanol, 4800 water</td>
+<td>3000 methanol, 12000 water</td>
+</tr>
+<tr>
+<td>0.9</td>
+<td>200 methanol, 1800 water</td>
+<td>600 methanol, 5400 water</td>
+<td>1500 methanol, 13500 water</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0 methanol, 2000 water</td>
+<td>0 methanol, 6000 water</td>
+<td>0 methanol, 15000 water</td>
+</tr>
+</tbody>
+</table>
+</details>
+<h2 id="simulation">Simulation<a class="headerlink" href="#simulation" title="Permanent link">&para;</a></h2>
+<p>All simulations are performed with the <a href="https://openmm.org/">OpenMM simulation engine</a>. To simulate viscosity and self-diffusion coefficients of molecular mixtures the NVE ensemble is recommended, this is because in both NVT and NpT ensemble temperature or pressure and temperature are controlled and this affects the transport properties of the system. Therefore, the production of the trajectories takes place in the NVE ensemble. This is preceded by an equilibration phase in the NpT and NVT ensemble to adjust the temperature and pressure and to simulate the correct density of the molecular mixtures. The NpT ensemble starts from the packed boxes and begins with a slow warming phase, temperature is raised by 0.1 K every picosecond. This allows the <a href="http://docs.openmm.org/latest/userguide/theory/02_standard_forces.html#montecarlobarostat">Monte Carlo barostat</a>, which regulates the pressure, to start with the temperature already equilibrated; if this is not the case, it can lead to artifacts in the resulting density. From the last half of the NpT equilibration, in which the density is equilibrated, the average box size for the starting point of the NVT equilibration is determined. The box size is rescaled to this and velocities are assigned to the molecules according to the temperature. Each replica receives individual velocities from the Boltzmann distribution. In OpenMM the temperature control is technically coupled to the integrator, in both equilibrium phases, Npt and NVT, the temperature is controlled by the <a href="http://docs.openmm.org/latest/userguide/theory/04_integrators.html#langevinmiddleintegrator">LangevinMiddleIntegrator</a>, which is equivalent to a Langevin thermostat with leapfrog integrator. </p>
+<p><img alt="Ensemble scheme" src="../graphics/ensemble_scheme.svg" /></p>
+<p>For the NVE production phase, energy conservation in the system is crucial. This is particularly dependent on integration precision. Important here are a small particle mesh ewald and constraint error tolerance while maintaining high simulation speed, since the lowering of the former also results in a lowering of the latter. The cutoff for <a href="http://docs.openmm.org/latest/userguide/theory/02_standard_forces.html#nonbondedforce">Lennard-Jones and electostatic interactions</a> also has a non-negligible influence; here, too, a balance must be found between precision and simulation speed. However, the contribution of all particles beyond the cutoff is included with a correction factor. In addition, the energy at the cutoff can smoothly transition to 0 with a switching function. The integration itself is handled by a simple <a href="http://docs.openmm.org/latest/userguide/theory/04_integrators.html#verletintegrator">Verlet integrator</a>. During all ensembles the energy of the system is stored, as well as the temperature, density and volume. During the NVE production, trajectories, once with unwrapped coordinates and once with wrapped coordinates, are also stored.</p>
+<h2 id="analysis">Analysis<a class="headerlink" href="#analysis" title="Permanent link">&para;</a></h2>
+<p>The <strong>density <span class="arithmatex">\(\rho\)</span></strong> can be read out continously during the simulation <em>via</em> the built-in <a href="http://docs.openmm.org/latest/api-python/generated/openmm.app.statedatareporter.StateDataReporter.html#openmm.app.statedatareporter.StateDataReporter">StateDataReporter</a> of OpenMM. It is calculated by dividing the total mass of the simulated box by its volume. To determine the density of a system, the second half of the simulated NpT ensemble is taken, in which the density is equilibrated. All density outputs of this period are averaged. These are then in turn averaged over all box sizes to give the final density value. <a href="https://www.mdanalysis.org/">MDAnalysis</a>, a python package for trajectory analysis of simulations, is used to compute the <strong>mean squared displacement (MSD)</strong> of the individual molecule types of the mixture. The Eintein formula is used for this purpose:</p>
+<div class="arithmatex">\[
+MSD(r_d) = \left \langle \frac{1}{N} \sum_{i=1}^{N} | r_d - r_d ( t_0) |^2 \right \rangle_{t_0}
+\]</div>
+<p><span class="arithmatex">\(N\)</span> is the number of equivalent particles the MSD is calculated over, <span class="arithmatex">\(r\)</span> are their coordinates and <span class="arithmatex">\(d\)</span> the dimensionality. Trajectories with unwrapped coordinates are used for the MSD calculation because it is reliant on the distance travelled by the molecules, which is distorted by rewrapping. The <strong>self-diffusion coefficient</strong> of a molecule type is then obtained by fitting the linear part of the MSD. The recommended fitting range is between 20% and 80% of the simulation time due to nonlinearity at the beginning and poor averaging at the end. Self-diffusion coefficients are then calculated by dividing the resulting slope by six because of the three-dimensionality of the MSD. The self-diffusion coefficients are averaged over all replicates and finite-size corrected. To achieve this, the self-diffusion coefficients of at least three different sized simulation boxes are fitted linearly over their inverse box side lengths, the intersection with the y-axis is the corrected self-diffusion coefficient at infinite box size. </p>
+<div class="admonition info">
+<p class="admonition-title">Finite-size effects</p>
+<p>When simulating small, finite systems, systemic finite-size effects must be taken into account. This is usually achieved by extrapolating several systems of different sizes.</p>
+</div>
+<p><strong>Viscosity</strong> <span class="arithmatex">\(\eta\)</span> is determined using the relationship between self-diffusion coefficient and finite-size corrected self-diffusion coefficient described by Yeh and Hummer. </p>
+<div class="arithmatex">\[
+D = \left (-\frac{k_BT\xi}{6\pi\eta}\right)\left(\frac{1}{L}\right)+D_\infty
+\]</div>
+<p><span class="arithmatex">\(D\)</span> is the self-diffusion coefficient at box size <span class="arithmatex">\(L\)</span>, <span class="arithmatex">\(k_{B}\)</span> is the Boltzmann constant, <span class="arithmatex">\(T\)</span> is the temperature in K, <span class="arithmatex">\(\eta\)</span> is the viscosity, <span class="arithmatex">\(\xi\)</span> is a dimensionless constant with a value of 2.837297 for cubic boxes and <span class="arithmatex">\(D_{\infty}\)</span> is the self-diffusion coefficient at infinite box size. From the linear fit over the inverse box size used to determine the finite-size corrected self-diffusion coefficient, the viscosity can be determined by the slope <span class="arithmatex">\(a\)</span>. To obtain reliable viscosity values, a simulation length in which linear diffusion takes place is necessary, and good averaging by many replicates is essential; note that the smaller the box, the more replicates are needed, since the number of molecules that can be averaged over is smaller.</p>
+<div class="arithmatex">\[
+\eta = \left(-\frac{k_BT\xi}{a6\pi} \right)
+\]</div>
+<p><img alt="Viscosity Analysis" src="../graphics/viscosity_ana.svg" /></p>
+<p>The <strong>hydrogen bonds</strong> analysis is done by <a href="https://www.mdanalysis.org/">MDAnalysis</a> as well. All atoms that participate in hydrogen bond formation must be given in MDAnalysis selection syntax. The hydrogen bonds are then detected by two geometric criteria, the maximum donor-acceptor distance and the minimum angle between donor, hydrogen and acceptor. The maximum donor-acceptor distance is set to 3.5 Å and the minimal angle between donor, hydrogen and acceptor to 150 °. Hydrogen bonds types are counted and averaged over simulation time. Additionally, they are averaged per molecule type. Here, wrapped coordinates are analyzed.</p>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      2022-06-20
+    
+  </small>
+</div>
+
+              
+
+            </article>
+            
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../usage/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Usage" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Usage
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../mixturemm/" class="md-footer__link md-footer__link--next" aria-label="Next: mixturemm module" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              mixturemm module
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "search.highlight", "navigation.tabs", "navigation.top"], "search": "../assets/javascripts/workers/search.85cb4492.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.a877e258.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

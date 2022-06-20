@@ -1,0 +1,1896 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://FAIRChemistry.github.io/mixturemm/usage/">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.6">
+    
+    
+      
+        <title>Usage - mixturemm</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.4a0965b7.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto Slab";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#usage" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="mixturemm" class="md-header__button md-logo" aria-label="mixturemm" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M256 224c-17.6 0-32.9 14.4-32.9 32s15.3 32 32.9 32c17.63 0 32-14.38 32-32s-14.4-32-32-32zm214.2-96c-10.88-19.5-40.51-50.75-116.3-41.88C332.4 34.88 299.6 0 256 0s-76.4 34.88-97.9 86.12C82.34 77.38 52.71 108.5 41.83 128c-16.38 29.38-14.91 73.12 25.23 128-40.13 54.88-41.61 98.63-25.23 128 29.13 52.38 101.6 43.63 116.3 41.88C179.6 477.1 212.4 512 256 512s76.39-34.88 97.9-86.13C368.5 427.6 441 436.4 470.2 384c16.38-29.38 14.91-73.13-25.23-128 40.13-54.9 41.53-98.6 25.23-128zM95.34 352c-4.001-7.25-.125-24.75 15-48.25 6.876 6.5 14.13 12.87 21.88 19.12 1.625 13.75 4.001 27.13 6.751 40.13-24.671.9-39.881-4.4-43.631-11zm36.86-162.9c-7.7 6.3-15 12.7-21.9 19.1-15.08-23.4-18.96-41-14.96-48.2 3.376-6.125 16.38-11.5 37.88-11.5 1.75 0 3.876.375 5.751.375C136.1 162.2 133.8 175.6 132.2 189.1zM256 64c9.502 0 22.25 13.5 33.88 37.25C278.6 105 267.4 109.3 256 114.1c-11.4-4.8-22.6-9.1-33.9-12.9C233.7 77.5 246.5 64 256 64zm0 384c-9.502 0-22.25-13.5-33.88-37.25C233.4 407 244.6 402.7 256 397.9a437.89 437.89 0 0 0 33.88 12.89C278.3 434.5 265.5 448 256 448zm0-112c-44.13 0-80.02-35.88-80.02-80s35.92-80 80.02-80 80.02 35.88 80.02 80-35.92 80-80.02 80zm160.7 16c-3.626 6.625-19 11.88-43.63 11 2.751-12.1 5.126-26.38 6.751-40.13 7.752-6.25 15-12.63 21.88-19.12C416.8 327.2 420.7 344.8 416.7 352zm-15-143.8a368.765 368.765 0 0 0-21.88-19.12 442.887 442.887 0 0 0-6.751-40.25c1.875 0 4.001-.375 5.751-.375 21.5 0 34.51 5.375 37.88 11.5 4 7.245.1 24.845-15 48.245z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            mixturemm
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Usage
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/FAIRChemistry/mixturemm" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href=".." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../installation/" class="md-tabs__link">
+      Installation
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  <li class="md-tabs__item">
+    <a href="./" class="md-tabs__link md-tabs__link--active">
+      Usage
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../scientific/" class="md-tabs__link">
+      Scientific background
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="https://github.com/FAIRChemistry/mixturemm/issues" class="md-tabs__link">
+      Report Issues
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../mixturemm/" class="md-tabs__link">
+        API Reference
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="mixturemm" class="md-nav__button md-logo" aria-label="mixturemm" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M256 224c-17.6 0-32.9 14.4-32.9 32s15.3 32 32.9 32c17.63 0 32-14.38 32-32s-14.4-32-32-32zm214.2-96c-10.88-19.5-40.51-50.75-116.3-41.88C332.4 34.88 299.6 0 256 0s-76.4 34.88-97.9 86.12C82.34 77.38 52.71 108.5 41.83 128c-16.38 29.38-14.91 73.12 25.23 128-40.13 54.88-41.61 98.63-25.23 128 29.13 52.38 101.6 43.63 116.3 41.88C179.6 477.1 212.4 512 256 512s76.39-34.88 97.9-86.13C368.5 427.6 441 436.4 470.2 384c16.38-29.38 14.91-73.13-25.23-128 40.13-54.9 41.53-98.6 25.23-128zM95.34 352c-4.001-7.25-.125-24.75 15-48.25 6.876 6.5 14.13 12.87 21.88 19.12 1.625 13.75 4.001 27.13 6.751 40.13-24.671.9-39.881-4.4-43.631-11zm36.86-162.9c-7.7 6.3-15 12.7-21.9 19.1-15.08-23.4-18.96-41-14.96-48.2 3.376-6.125 16.38-11.5 37.88-11.5 1.75 0 3.876.375 5.751.375C136.1 162.2 133.8 175.6 132.2 189.1zM256 64c9.502 0 22.25 13.5 33.88 37.25C278.6 105 267.4 109.3 256 114.1c-11.4-4.8-22.6-9.1-33.9-12.9C233.7 77.5 246.5 64 256 64zm0 384c-9.502 0-22.25-13.5-33.88-37.25C233.4 407 244.6 402.7 256 397.9a437.89 437.89 0 0 0 33.88 12.89C278.3 434.5 265.5 448 256 448zm0-112c-44.13 0-80.02-35.88-80.02-80s35.92-80 80.02-80 80.02 35.88 80.02 80-35.92 80-80.02 80zm160.7 16c-3.626 6.625-19 11.88-43.63 11 2.751-12.1 5.126-26.38 6.751-40.13 7.752-6.25 15-12.63 21.88-19.12C416.8 327.2 420.7 344.8 416.7 352zm-15-143.8a368.765 368.765 0 0 0-21.88-19.12 442.887 442.887 0 0 0-6.751-40.25c1.875 0 4.001-.375 5.751-.375 21.5 0 34.51 5.375 37.88 11.5 4 7.245.1 24.845-15 48.245z"/></svg>
+
+    </a>
+    mixturemm
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/FAIRChemistry/mixturemm" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/" class="md-nav__link">
+        Installation
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Usage
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Usage
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#setup" class="md-nav__link">
+    Setup
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simulation" class="md-nav__link">
+    Simulation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analysis" class="md-nav__link">
+    Analysis
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scientific/" class="md-nav__link">
+        Scientific background
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/FAIRChemistry/mixturemm/issues" class="md-nav__link">
+        Report Issues
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          API Reference
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="API Reference" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          API Reference
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mixturemm/" class="md-nav__link">
+        mixturemm module
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../background/" class="md-nav__link">
+        background modue
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tools/" class="md-nav__link">
+        tools module
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../utils/" class="md-nav__link">
+        utils module
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#setup" class="md-nav__link">
+    Setup
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simulation" class="md-nav__link">
+    Simulation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analysis" class="md-nav__link">
+    Analysis
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+
+
+
+                
+  <a href="https://github.com/FAIRChemistry/mixturemm/edit/master/docs/usage.md" title="Edit this page" class="md-content__button md-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+
+<h1 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h1>
+<p>To use mixturemm install the package and import it. All required classes (Project, Molecule, Forcefield and Mixture) for simulation and analysis are added to the namespace.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span> <span class="nn">mixturemm</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link">&para;</a></h2>
+<p>The first step to beginning a project is setting the path to the directory where the project folder should be stored.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">workdir</span> <span class="o">=</span> <span class="s1">&#39;home/molecule_mixture_project&#39;</span>
+</code></pre></div></td></tr></table></div>
+<p>A project is defined <em>via</em> four setting sections. First, OpenMM is assigned the hardware on which the simulations are to run; if the simulations are to be run on a high-performance computing center, this is overwritten with the hardware resources specified when generating the submissions. Second, the parameter space of box sizes, temperatures, pressures, and dilutions to be considered is set. After that, the settings for the individual ensembles that follow each other in the simulation are made. Finally, the settings for constraints and nonbonded interactions affecting all ensembles are given.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">example project initiation</label><label for="__tabbed_1_2">argument details</label><label for="__tabbed_1_3">extend a project</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">project</span> <span class="o">=</span> <span class="n">mixturemm</span><span class="o">.</span><span class="n">Project</span><span class="p">(</span><span class="n">workdir</span><span class="p">,</span>
+                            <span class="n">simulation_platform</span><span class="o">=</span><span class="s1">&#39;CUDA&#39;</span><span class="p">,</span>
+                            <span class="n">simulation_properties</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;DeviceIndex&#39;</span><span class="p">:</span> <span class="s1">&#39;0&#39;</span><span class="p">,</span> <span class="s1">&#39;Precision&#39;</span><span class="p">:</span> <span class="s1">&#39;double&#39;</span><span class="p">},</span>
+                            <span class="n">total_number_molecules</span><span class="o">=</span><span class="p">[</span><span class="mi">2000</span><span class="p">,</span><span class="mi">6000</span><span class="p">,</span><span class="mi">15000</span><span class="p">],</span>
+                            <span class="n">init_box_side_length</span><span class="o">=</span><span class="p">[</span><span class="mi">65</span><span class="p">,</span><span class="mi">75</span><span class="p">,</span><span class="mi">102</span><span class="p">],</span>
+                            <span class="n">chi_water_s</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.2</span><span class="p">,</span><span class="mf">0.3</span><span class="p">,</span><span class="mf">0.4</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">0.6</span><span class="p">,</span><span class="mf">0.7</span><span class="p">,</span><span class="mf">0.8</span><span class="p">,</span><span class="mf">0.9</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span>
+                            <span class="n">temperature_s</span><span class="o">=</span><span class="p">[</span><span class="mf">298.15</span><span class="p">,</span><span class="mf">308.15</span><span class="p">,</span><span class="mf">318.15</span><span class="p">],</span>
+                            <span class="n">npt_equilibration_pressure_s</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+                            <span class="n">npt_equilibration_pressure_coupling_frequency</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span>
+                            <span class="n">npt_equilibration_temperature_coupling_frequency</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span>
+                            <span class="n">npt_equilibration_timestep_fs</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+                            <span class="n">npt_equilibration_duration_ns</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span>
+                            <span class="n">reporting_frequency_state_npt_equilibration</span> <span class="o">=</span> <span class="mi">500</span><span class="p">,</span>
+                            <span class="n">nvt_equilibration_temperature_coupling_frequency</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span>
+                            <span class="n">nvt_equilibration_timestep_fs</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+                            <span class="n">nvt_equilibration_duration_ns</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span>
+                            <span class="n">reporting_frequency_state_nvt_equilibration</span><span class="o">=</span><span class="mi">4000</span><span class="p">,</span>
+                            <span class="n">nve_production_timestep_fs</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+                            <span class="n">nve_production_duration_ns</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span>
+                            <span class="n">reporting_frequency_coordinates_unwrapped</span><span class="o">=</span><span class="mi">4000</span><span class="p">,</span>
+                            <span class="n">reporting_frequency_coordinates_wrapped</span><span class="o">=</span><span class="mi">8000</span><span class="p">,</span>
+                            <span class="n">reporting_frequency_state_nve_production</span><span class="o">=</span><span class="mi">8000</span><span class="p">,</span>
+                            <span class="n">replica_count</span><span class="o">=</span><span class="mi">40</span><span class="p">,</span>
+                            <span class="n">pme_error_tolerance</span><span class="o">=</span><span class="mf">0.000001</span><span class="p">,</span>
+                            <span class="n">constraint_tolerance</span><span class="o">=</span><span class="mf">0.0000001</span><span class="p">,</span>
+                            <span class="n">cutoff_distance_nm</span><span class="o">=</span><span class="mf">1.4</span><span class="p">,</span>
+                            <span class="n">cutoff_switch_distance_nm</span><span class="o">=</span><span class="mf">1.2</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th>argument</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>workdir</td>
+<td>The path at which the project should be stored.</td>
+</tr>
+<tr>
+<td>simulation_platform</td>
+<td>The platform the simulation should run on. <a href="http://docs.openmm.org/latest/userguide/library/04_platform_specifics.html">OpenMM ref.</a></td>
+</tr>
+<tr>
+<td>simulation_properties</td>
+<td>The platform properties for the simulation. <a href="http://docs.openmm.org/latest/userguide/library/04_platform_specifics.html">OpenMM ref.</a></td>
+</tr>
+<tr>
+<td>total_number_molecules</td>
+<td>A list with the number of molecules that should be placed in the simulation box.</td>
+</tr>
+<tr>
+<td>init_box_side_length</td>
+<td>The initial box side lengths that should be used by packmol. <a href="http://leandro.iqm.unicamp.br/m3g/packmol/userguide.shtml">Packmol ref.</a></td>
+</tr>
+<tr>
+<td>chi_water_s</td>
+<td>A list with all different molar fractions of water that should be simulated.</td>
+</tr>
+<tr>
+<td>temperature_s</td>
+<td>A list with all different temperatures in kelvin at which the boxes should be simulated.</td>
+</tr>
+<tr>
+<td>npt_equilibration_pressure_s</td>
+<td>A list with all pressures in bar at which the boxes should be simulated.</td>
+</tr>
+<tr>
+<td>npt_equilibration_pressure_coupling_frequency</td>
+<td>The pressure coupling frequency at which the Monte Carlo barostat should interact with the system and attempt a Monte Carlo move to adjust the volume during the NpT equilibration in simulation steps. <a href="http://docs.openmm.org/latest/userguide/theory/02_standard_forces.html#montecarlobarostat">OpenMM ref.</a></td>
+</tr>
+<tr>
+<td>npt_equilibration_temperature_coupling_frequency</td>
+<td>The collision frequency of the Langevin thermostat during the NpT equilibration in inverse picoseconds. <a href="http://docs.openmm.org/latest/userguide/theory/04_integrators.html#langevinmiddleintegrator">OpenMM ref.</a></td>
+</tr>
+<tr>
+<td>npt_equilibration_timestep_fs</td>
+<td>The integration time step during the NpT equilibration in femtoseconds.</td>
+</tr>
+<tr>
+<td>npt_equilibration_duration_ns</td>
+<td>The duration of the NpT equilibration in nanoseconds.</td>
+</tr>
+<tr>
+<td>reporting_frequency_state_npt_equilibration</td>
+<td>The reporting frequency of the openMM StateDataReporter in simulation steps during the NpT equilibration. <a href="http://docs.openmm.org/latest/api-python/generated/openmm.app.statedatareporter.StateDataReporter.html#openmm.app.statedatareporter.StateDataReporter">OpenMM ref.</a></td>
+</tr>
+<tr>
+<td>nvt_equilibration_temperature_coupling_frequency</td>
+<td>The collision frequency of the Langevin thermostat during the NVT equilibration in inverse picoseconds. <a href="http://docs.openmm.org/latest/userguide/theory/04_integrators.html#langevinmiddleintegrator">OpenMM ref.</a></td>
+</tr>
+<tr>
+<td>nvt_equilibration_timestep_fs</td>
+<td>The integration time step during the NVT equilibration in femtoseconds.</td>
+</tr>
+<tr>
+<td>nvt_equilibration_duration_ns</td>
+<td>The duration of the NVT equilibration in nanoseconds.</td>
+</tr>
+<tr>
+<td>reporting_frequency_state_nvt_equilibration</td>
+<td>The reporting frequency of the openMM StateDataReporter in simulation steps during the NVT equilibration. <a href="http://docs.openmm.org/latest/api-python/generated/openmm.app.statedatareporter.StateDataReporter.html#openmm.app.statedatareporter.StateDataReporter">OpenMM ref.</a></td>
+</tr>
+<tr>
+<td>nve_production_timestep_fs</td>
+<td>The integration time step during the NVE production in femtoseconds.</td>
+</tr>
+<tr>
+<td>nve_production_duration_ns</td>
+<td>The duration of the NVE production in nanoseconds.</td>
+</tr>
+<tr>
+<td>reporting_frequency_coordinates_unwrapped</td>
+<td>The reporting frequency of the trajectory with unwrapped coordinates in simulation steps during the NVE production. <a href="http://docs.openmm.org/latest/api-python/generated/openmm.app.dcdreporter.DCDReporter.html#openmm.app.dcdreporter.DCDReporter">OpenMM ref.</a></td>
+</tr>
+<tr>
+<td>reporting_frequency_coordinates_wrapped</td>
+<td>The reporting frequency of the trajectory with wrapped coordinates in simulation steps during the NVE production. <a href="http://docs.openmm.org/latest/api-python/generated/openmm.app.dcdreporter.DCDReporter.html#openmm.app.dcdreporter.DCDReporter">OpenMM ref.</a></td>
+</tr>
+<tr>
+<td>reporting_frequency_state_nve_production</td>
+<td>The reporting frequency of the openMM StateDataReporter in simulation steps during the NVE production. <a href="http://docs.openmm.org/latest/api-python/generated/openmm.app.statedatareporter.StateDataReporter.html#openmm.app.statedatareporter.StateDataReporter">OpenMM ref.</a></td>
+</tr>
+<tr>
+<td>replica_count</td>
+<td>The number of times the simulation of one system should be replicated.</td>
+</tr>
+<tr>
+<td>pme_error_tolerance</td>
+<td>Decides how large the grid for PME is together with the cutoff. <a href="http://docs.openmm.org/latest/userguide/theory/02_standard_forces.html#nonbondedforce">OpenMM ref.</a></td>
+</tr>
+<tr>
+<td>constraint_tolerance</td>
+<td>The constraint tolerance specifies the distance tolerance within which constraints are maintained, as a fraction of the constrained distance.</td>
+</tr>
+<tr>
+<td>cutoff_distance_nm</td>
+<td>The cutoff distance for nonbonded interactions in nanometers. <a href="http://docs.openmm.org/latest/userguide/theory/02_standard_forces.html#nonbondedforce">OpenMM ref.</a></td>
+</tr>
+<tr>
+<td>cutoff_switch_distance_nm</td>
+<td>Starting point of the switching function that makes the energy go smoothly to 0 at the cutoff distance in nanometers. <a href="http://docs.openmm.org/latest/userguide/theory/02_standard_forces.html#nonbondedforce">OpenMM ref.</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<blockquote>
+<p>A project can easily be extended by adding the new parameters to the existing parameter lists of total molecule number and box size, temperature, pressure and water mole &gt; fraction or increasing the replica count.</p>
+</blockquote>
+</div>
+</div>
+</div>
+<p>Subsequently, the molecules contained in the mixture and their force fields are defined and the associated files are added to the project. On the one hand definition and the PDB files of the molecules</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">example methanol/water mixture</label><label for="__tabbed_2_2">argument details</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">Water</span> <span class="o">=</span> <span class="n">mixturemm</span><span class="o">.</span><span class="n">Molecule</span><span class="p">(</span><span class="n">workdir</span><span class="p">,</span> <span class="s1">&#39;Water&#39;</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;home/tip4p.pdb&#39;</span><span class="p">,</span> <span class="s1">&#39;HOH&#39;</span><span class="p">,</span> <span class="s1">&#39;O&#39;</span><span class="p">,</span> <span class="s1">&#39;1S/H2O/h1H2&#39;</span><span class="p">,</span> <span class="mf">18.015</span><span class="p">,</span> <span class="n">use_as_water</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">Methanol</span> <span class="o">=</span> <span class="n">mixturemm</span><span class="o">.</span><span class="n">Molecule</span><span class="p">(</span><span class="n">workdir</span><span class="p">,</span> <span class="s1">&#39;Methanol&#39;</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;home/methanol.pdb&#39;</span><span class="p">,</span> <span class="s1">&#39;Me&#39;</span><span class="p">,</span> <span class="s1">&#39;CO&#39;</span><span class="p">,</span> <span class="s1">&#39;1S/CH4O/c1-2/h2H,1H3&#39;</span><span class="p">,</span> <span class="mf">32.04</span><span class="p">)</span>
+<span class="n">project</span><span class="o">.</span><span class="n">add_molecule</span><span class="p">(</span><span class="n">Water</span><span class="p">)</span>
+<span class="n">project</span><span class="o">.</span><span class="n">add_molecule</span><span class="p">(</span><span class="n">Methanol</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th>argument</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>workdir</td>
+<td>The path at which the project is stored.</td>
+</tr>
+<tr>
+<td>name</td>
+<td>Name of the molecule.</td>
+</tr>
+<tr>
+<td>number_of_atoms</td>
+<td>The number of atoms that the molecule consists of.</td>
+</tr>
+<tr>
+<td>path_to_pdb</td>
+<td>The path to the molecule PDB file.</td>
+</tr>
+<tr>
+<td>abbreviation</td>
+<td>The abbreviation of the molecule that is used inside the PDB file.</td>
+</tr>
+<tr>
+<td>smiles</td>
+<td>The SMILES code of the molecule.</td>
+</tr>
+<tr>
+<td>inchi</td>
+<td>The InChI code of the molecule.</td>
+</tr>
+<tr>
+<td>molar_mass</td>
+<td>The molar mass of the molecule.</td>
+</tr>
+<tr>
+<td>use_as_water</td>
+<td>Decides whether the molecule is used as water or not. If used as water, the water molar fraction is applied to it while packing boxes.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<p>... on the other hand the definitions of the force fields and the XML files.</p>
+<div class="admonition warning">
+<p class="admonition-title">United-atoms force fields</p>
+<p>When simulating force fields with united atoms, as in the example here, note that OpenMM recognizes all basic atom types but not united-atoms. These must be added as described as "elements".</p>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">example methanol/water mixture</label><label for="__tabbed_3_2">argument details</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">Water_FF</span> <span class="o">=</span> <span class="n">mixturemm</span><span class="o">.</span><span class="n">Forcefield</span><span class="p">(</span><span class="n">workdir</span><span class="p">,</span> <span class="s1">&#39;home/tip4p-fb.xml&#39;</span><span class="p">,</span><span class="s1">&#39;tip4p-fb&#39;</span><span class="p">,</span> <span class="n">built_in</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">Methanol_FF</span> <span class="o">=</span> <span class="n">mixturemm</span><span class="o">.</span><span class="n">Forcefield</span><span class="p">(</span><span class="n">workdir</span><span class="p">,</span> <span class="s1">&#39;home/trappe_methanol.xml&#39;</span><span class="p">,</span><span class="s1">&#39;trappe_methanol&#39;</span><span class="p">,</span> <span class="n">built_in</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">elements</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;3&#39;</span><span class="p">:</span><span class="mf">15.0347</span><span class="p">})</span>
+<span class="n">project</span><span class="o">.</span><span class="n">add_forcefield</span><span class="p">(</span><span class="n">Water_FF</span><span class="p">)</span>
+<span class="n">project</span><span class="o">.</span><span class="n">add_forcefield</span><span class="p">(</span><span class="n">Methanol_FF</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th>argument</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>workdir</td>
+<td>The path at which the project is stored.</td>
+</tr>
+<tr>
+<td>path_to_XML</td>
+<td>The path to the force field XML file.</td>
+</tr>
+<tr>
+<td>ff_name</td>
+<td>The name under which the force field should be stored.</td>
+</tr>
+<tr>
+<td>built_in</td>
+<td>Decides whether the fore field is part of openMM or from an external source. If true, declares that a built in forcefield of openmm will be used.</td>
+</tr>
+<tr>
+<td>elements</td>
+<td>OpenMM uses Elements to match molecules to the force field. If atomtypes in the force field are unknown to OpenMM, they are registered by giving their name and mass in the form {'name' : mass}. <a href="http://docs.openmm.org/latest/api-python/generated/openmm.app.element.Element.html?highlight=element">OpenMM ref.</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<p>Then, the molecule names and their corresponding mole fraction in the mixture are given.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">example methanol/water mixture</label><label for="__tabbed_4_2">argument details</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">WaMeMixture</span> <span class="o">=</span> <span class="n">mixturemm</span><span class="o">.</span><span class="n">Mixture</span><span class="p">({</span><span class="s1">&#39;Methanol&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">})</span>
+<span class="n">project</span><span class="o">.</span><span class="n">add_mixture</span><span class="p">(</span><span class="n">WaMeMixture</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th>argument</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>mixture_dict</td>
+<td>Dictionary with molecule names and their corresponding mole fraction in the mixture.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<details class="abstract">
+<summary>All project input information as well as added molecules and forcefields will be stored in a short JSON project description.</summary>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">  1</span>
+<span class="normal">  2</span>
+<span class="normal">  3</span>
+<span class="normal">  4</span>
+<span class="normal">  5</span>
+<span class="normal">  6</span>
+<span class="normal">  7</span>
+<span class="normal">  8</span>
+<span class="normal">  9</span>
+<span class="normal"> 10</span>
+<span class="normal"> 11</span>
+<span class="normal"> 12</span>
+<span class="normal"> 13</span>
+<span class="normal"> 14</span>
+<span class="normal"> 15</span>
+<span class="normal"> 16</span>
+<span class="normal"> 17</span>
+<span class="normal"> 18</span>
+<span class="normal"> 19</span>
+<span class="normal"> 20</span>
+<span class="normal"> 21</span>
+<span class="normal"> 22</span>
+<span class="normal"> 23</span>
+<span class="normal"> 24</span>
+<span class="normal"> 25</span>
+<span class="normal"> 26</span>
+<span class="normal"> 27</span>
+<span class="normal"> 28</span>
+<span class="normal"> 29</span>
+<span class="normal"> 30</span>
+<span class="normal"> 31</span>
+<span class="normal"> 32</span>
+<span class="normal"> 33</span>
+<span class="normal"> 34</span>
+<span class="normal"> 35</span>
+<span class="normal"> 36</span>
+<span class="normal"> 37</span>
+<span class="normal"> 38</span>
+<span class="normal"> 39</span>
+<span class="normal"> 40</span>
+<span class="normal"> 41</span>
+<span class="normal"> 42</span>
+<span class="normal"> 43</span>
+<span class="normal"> 44</span>
+<span class="normal"> 45</span>
+<span class="normal"> 46</span>
+<span class="normal"> 47</span>
+<span class="normal"> 48</span>
+<span class="normal"> 49</span>
+<span class="normal"> 50</span>
+<span class="normal"> 51</span>
+<span class="normal"> 52</span>
+<span class="normal"> 53</span>
+<span class="normal"> 54</span>
+<span class="normal"> 55</span>
+<span class="normal"> 56</span>
+<span class="normal"> 57</span>
+<span class="normal"> 58</span>
+<span class="normal"> 59</span>
+<span class="normal"> 60</span>
+<span class="normal"> 61</span>
+<span class="normal"> 62</span>
+<span class="normal"> 63</span>
+<span class="normal"> 64</span>
+<span class="normal"> 65</span>
+<span class="normal"> 66</span>
+<span class="normal"> 67</span>
+<span class="normal"> 68</span>
+<span class="normal"> 69</span>
+<span class="normal"> 70</span>
+<span class="normal"> 71</span>
+<span class="normal"> 72</span>
+<span class="normal"> 73</span>
+<span class="normal"> 74</span>
+<span class="normal"> 75</span>
+<span class="normal"> 76</span>
+<span class="normal"> 77</span>
+<span class="normal"> 78</span>
+<span class="normal"> 79</span>
+<span class="normal"> 80</span>
+<span class="normal"> 81</span>
+<span class="normal"> 82</span>
+<span class="normal"> 83</span>
+<span class="normal"> 84</span>
+<span class="normal"> 85</span>
+<span class="normal"> 86</span>
+<span class="normal"> 87</span>
+<span class="normal"> 88</span>
+<span class="normal"> 89</span>
+<span class="normal"> 90</span>
+<span class="normal"> 91</span>
+<span class="normal"> 92</span>
+<span class="normal"> 93</span>
+<span class="normal"> 94</span>
+<span class="normal"> 95</span>
+<span class="normal"> 96</span>
+<span class="normal"> 97</span>
+<span class="normal"> 98</span>
+<span class="normal"> 99</span>
+<span class="normal">100</span>
+<span class="normal">101</span>
+<span class="normal">102</span>
+<span class="normal">103</span>
+<span class="normal">104</span>
+<span class="normal">105</span>
+<span class="normal">106</span>
+<span class="normal">107</span>
+<span class="normal">108</span>
+<span class="normal">109</span>
+<span class="normal">110</span>
+<span class="normal">111</span>
+<span class="normal">112</span>
+<span class="normal">113</span>
+<span class="normal">114</span>
+<span class="normal">115</span>
+<span class="normal">116</span>
+<span class="normal">117</span>
+<span class="normal">118</span>
+<span class="normal">119</span>
+<span class="normal">120</span>
+<span class="normal">121</span>
+<span class="normal">122</span>
+<span class="normal">123</span>
+<span class="normal">124</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;workflow_info&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;general&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;package_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;mixturemm&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;simulation_engine&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;OpenMM&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;analysis_package&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;MDAnalysis&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="p">},</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;simulation&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;ensemble_order&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;---(slow heating)---&gt; |NpT| ---(rescale boxes and assign velocities)---&gt; |NVT| ------&gt; |NVE|&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;pressure_and_temperature_control&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;NpT&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Langevin thermostat, Monte Carlo barostat&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;NVT&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Langevin thermostat&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;NVE&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;no pressure and temperature control&quot;</span><span class="w"></span>
+<span class="w">            </span><span class="p">},</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;constraints&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;hydrogen bonds&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;nonbonded forces algorithm&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;particle mesh ewald&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">},</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;project&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;simulation_parameters&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;total_number_of_molecules&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">                </span><span class="mi">2000</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="mi">6000</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="mi">15000</span><span class="w"></span>
+<span class="w">            </span><span class="p">],</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;initial_box_side_lengths&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">                </span><span class="mi">65</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="mi">75</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="mi">102</span><span class="w"></span>
+<span class="w">            </span><span class="p">],</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;water_mole_fractions&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">                </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="mf">0.1</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="mf">0.2</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="mf">0.3</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="mf">0.4</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="mf">0.5</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="mf">0.6</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="mf">0.7</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="mf">0.8</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="mf">0.9</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="mi">1</span><span class="w"></span>
+<span class="w">            </span><span class="p">],</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;temperature_s_in_kelvin&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">                </span><span class="mf">298.15</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="mf">308.15</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="mf">318.15</span><span class="w"></span>
+<span class="w">            </span><span class="p">],</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;pressure_s_in_bar&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">                </span><span class="mi">1</span><span class="w"></span>
+<span class="w">            </span><span class="p">],</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;number_of_replicas&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">40</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;replica_starting_number&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;overcharged_boxes&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;[2000] molecules&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;with 60 replicas&quot;</span><span class="w"></span>
+<span class="w">            </span><span class="p">}</span><span class="w"></span>
+<span class="w">        </span><span class="p">},</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;hardware_settings&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;platform&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CUDA&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;properties&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;DeviceIndex&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;0&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;Precision&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;double&quot;</span><span class="w"></span>
+<span class="w">            </span><span class="p">}</span><span class="w"></span>
+<span class="w">        </span><span class="p">},</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;simulation_settings&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;pme_error_tolerance&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">1e-06</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;constraint_tolerance&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">1e-07</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;cutoff_distance_in_nm&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">1.4</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;switching_function_starting_distance_in_nm&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">1.2</span><span class="w"></span>
+<span class="w">        </span><span class="p">},</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;npt_equilibration&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;pressure_coupling_frequency&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">500</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;temperature_coupling_frequency&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.1</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;timestep_in_fs&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;duration_in_ns&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">12</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;state_data_reporting_frequency&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">500</span><span class="w"></span>
+<span class="w">        </span><span class="p">},</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;nvt_equilibration&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;temperature_coupling_frequency&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.1</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;timestep_in_fs&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;duration_in_ns&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;state_data_reporting_frequency&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4000</span><span class="w"></span>
+<span class="w">        </span><span class="p">},</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;nve_production&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;timestep_in_fs&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;duration_in_ns&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">50</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;state_data_reporting_frequency&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">8000</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;unwrapped_trajectory_reporting_frequency&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4000</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;wrapped_trajectory_reporting_frequency&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">8000</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">},</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;molecules&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;Water&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;number_of_atoms&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;abbreviation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;HOH&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;molar_ratio&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;smiles_code&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;O&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;inchi_key&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1S/H2O/h1H2&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;molar_mass&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">18.015</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;used_as_water&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w"></span>
+<span class="w">        </span><span class="p">},</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;Methanol&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;number_of_atoms&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;abbreviation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Me&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;molar_ratio&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;smiles_code&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CO&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;inchi_key&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1S/CH4O/c1-2/h2H,1H3&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;molar_mass&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">32.04</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;used_as_water&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">},</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;force fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;tip4p-fb&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;built_in&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;added_elements&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w"></span>
+<span class="w">        </span><span class="p">},</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;trappe_methanol&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;built_in&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;added_elements&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;3&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">15.0347</span><span class="w"></span>
+<span class="w">            </span><span class="p">}</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
+</details>
+<p>In the last preparatory step, the simulated systems and their replicas are generated by combining the parameters and the corresponding folder structure is created. Then, the simulation boxes are packed with the PDB files of the molecules corresponding to their proportion in the total number of molecules. In addition, a further number of replicas can be added at this point for individual box sizes.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">system/replica preparation and box packing without</label><label for="__tabbed_5_2">... and with adding replicas for certain box sizes</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">project</span><span class="o">.</span><span class="n">create_simulationboxes</span><span class="p">()</span>
+<span class="n">project</span><span class="o">.</span><span class="n">create_systems</span><span class="p">()</span>
+<span class="n">project</span><span class="o">.</span><span class="n">create_replicas</span><span class="p">(</span><span class="n">start</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">project</span><span class="o">.</span><span class="n">create_simulationboxes</span><span class="p">()</span>
+<span class="n">project</span><span class="o">.</span><span class="n">create_systems</span><span class="p">()</span>
+<span class="n">project</span><span class="o">.</span><span class="n">create_replicas</span><span class="p">(</span><span class="n">start</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">project</span><span class="o">.</span><span class="n">overcharge_replicas</span><span class="p">(</span><span class="n">total_number_molecules</span><span class="o">=</span><span class="p">[</span><span class="mi">2000</span><span class="p">],</span> <span class="n">overcharge_amount</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">project</span><span class="o">.</span><span class="n">overcharge_replicas</span><span class="p">(</span><span class="n">total_number_molecules</span><span class="o">=</span><span class="p">[</span><span class="mi">6000</span><span class="p">],</span> <span class="n">overcharge_amount</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+</div>
+</div>
+</div>
+<h2 id="simulation">Simulation<a class="headerlink" href="#simulation" title="Permanent link">&para;</a></h2>
+<p>There are two ways to run the simulations defined in the project. They can be run locally on the computer where the project was initiated. However, this is not recommended for large-scale projects due to the low computing power. This mode is rather used for test runs and troubleshooting of the system setup. First the NpT equilibration of all systems takes place, then the NVT equilibration and following NVE production of the trajectories of the replicas.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">project</span><span class="o">.</span><span class="n">adjust_to_correct_density</span><span class="p">()</span>
+<span class="n">project</span><span class="o">.</span><span class="n">simulate</span><span class="p">()</span>
+</code></pre></div></td></tr></table></div>
+<p>The recommended approach for large-scale projects is the submission of the simulations to a high-performance computing center. There, the simulations are transferred <em>via</em> a queuing system to nodes where they run. With the resources available there, it is possible to run many simulations in parallel. To run the simulations on a high performance computing center the executable scripts from the HPC folder of the mixturemm package are needed and the whole project folder has to be transferred to a workspace on the high performance computing center. Submission scripts are required to submit simulations to the queue. These are generated based on the given project and the specification of the hardware resources. To ensure the optimal use of the available resources on the nodes, the simulations can be parallelized according to the available GPUs or CPU cores. </p>
+<div class="admonition warning">
+<p class="admonition-title">Dependencies</p>
+<p>Be aware that all dependencies have to be available on the high-performance computing center as well. It is therefore recommended to install it into a anaconda environment with <a href="https://anaconda.org/conda-forge/openmm">OpenMM</a>, <a href="https://anaconda.org/omnia/packmol">packmol</a>, <a href="https://anaconda.org/conda-forge/mdanalysis">MDAnalysis</a>, <a href="https://anaconda.org/conda-forge/mdtraj">mdtraj</a>, <a href="https://anaconda.org/conda-forge/seaborn">seaborn</a>, <a href="https://anaconda.org/anaconda/more-itertools">more-itertools</a> and <a href="https://anaconda.org/conda-forge/tidynamics">tidynamics</a>. This environment should be the one you activate on the nodes where the simulations and analyses are submitted to. Additionally, you have to either upload or generate your project folder with all the wanted job scripts to/on your high-performance computing center.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Updating the folder on the high-performance computing center when running additional replicas</p>
+<p>When new replicas are added by increasing the replica number of the project, the folder structure on the high-performance computing center can be extended with </p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">project</span><span class="o">.</span><span class="n">hpc_extend_replica_folders</span><span class="p">(</span><span class="n">hpc_folder</span><span class="o">=</span><span class="s2">&quot;/hpc/workspace/molecule_mixture_project&quot;</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:3"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><input id="__tabbed_6_3" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">first submission</label><label for="__tabbed_6_2">subsequent submissions</label><label for="__tabbed_6_3">argument details</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="tabbed-set tabbed-alternate" data-tabs="7:2"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><input id="__tabbed_7_2" name="__tabbed_7" type="radio" /><div class="tabbed-labels"><label for="__tabbed_7_1">NpT equilibration</label><label for="__tabbed_7_2">NVT equilibration and NVE production</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">project</span><span class="o">.</span><span class="n">create_hpc_submission_adjust_to_correct_density</span><span class="p">(</span>
+                    <span class="n">hpc_workspace</span><span class="o">=</span><span class="s2">&quot;/hpc/workspace/&quot;</span><span class="p">,</span>
+                    <span class="n">hpc_folder</span><span class="o">=</span><span class="s2">&quot;/hpc/workspace/molecule_mixture_project&quot;</span><span class="p">,</span>
+                    <span class="n">hpc_scripts_folder</span><span class="o">=</span><span class="s2">&quot;/hpc/workspace/HPC&quot;</span><span class="p">,</span>
+                    <span class="n">environment_name</span><span class="o">=</span><span class="s1">&#39;conda_env_simulation&#39;</span><span class="p">,</span>
+                    <span class="n">scheduler</span><span class="o">=</span><span class="s1">&#39;SBATCH&#39;</span><span class="p">,</span>
+                    <span class="n">partition</span><span class="o">=</span><span class="s1">&#39;accelerated&#39;</span><span class="p">,</span>
+                    <span class="n">number_of_threads</span><span class="o">=</span><span class="mi">152</span><span class="p">,</span>
+                    <span class="n">number_of_gpus</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span>
+                    <span class="n">chunk_size</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span>
+                    <span class="n">max_runtime_hh_mm_ss</span><span class="o">=</span><span class="s1">&#39;24:00:00&#39;</span><span class="p">,</span>
+                    <span class="n">conda_module</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                    <span class="n">chain_submission_number</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>              
+                    <span class="n">dependency_type</span><span class="o">=</span><span class="s1">&#39;afternotok&#39;</span><span class="p">,</span>
+                    <span class="n">checkpoint_frequency</span><span class="o">=</span><span class="mi">500000</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">project</span><span class="o">.</span><span class="n">create_hpc_submission_simulate</span><span class="p">(</span>
+                    <span class="n">hpc_workspace</span><span class="o">=</span><span class="s2">&quot;/hpc/workspace/&quot;</span><span class="p">,</span>
+                    <span class="n">hpc_folder</span><span class="o">=</span><span class="s2">&quot;/hpc/workspace/molecule_mixture_project&quot;</span><span class="p">,</span>
+                    <span class="n">hpc_scripts_folder</span><span class="o">=</span><span class="s2">&quot;/hpc/workspace/HPC&quot;</span><span class="p">,</span>
+                    <span class="n">environment_name</span><span class="o">=</span><span class="s1">&#39;conda_env_simulation&#39;</span><span class="p">,</span>
+                    <span class="n">scheduler</span><span class="o">=</span><span class="s1">&#39;SBATCH&#39;</span><span class="p">,</span>
+                    <span class="n">partition</span><span class="o">=</span><span class="s1">&#39;accelerated&#39;</span><span class="p">,</span>
+                    <span class="n">number_of_threads</span><span class="o">=</span><span class="mi">152</span><span class="p">,</span>
+                    <span class="n">number_of_gpus</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span>
+                    <span class="n">chunk_size</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span>
+                    <span class="n">max_number_of_jobs</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span>
+                    <span class="n">max_runtime_hh_mm_ss</span><span class="o">=</span><span class="s1">&#39;24:00:00&#39;</span><span class="p">,</span>
+                    <span class="n">conda_module</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                    <span class="n">chain_submission_number</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>              
+                    <span class="n">dependency_type</span><span class="o">=</span><span class="s1">&#39;afternotok&#39;</span><span class="p">,</span>
+                    <span class="n">checkpoint_frequency</span><span class="o">=</span><span class="mi">500000</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+</div>
+</div>
+</div>
+</div>
+<div class="tabbed-block">
+<div class="tabbed-set tabbed-alternate" data-tabs="8:2"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio" /><input id="__tabbed_8_2" name="__tabbed_8" type="radio" /><div class="tabbed-labels"><label for="__tabbed_8_1">NpT equilibration</label><label for="__tabbed_8_2">NVT equilibration and NVE production</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">project</span><span class="o">.</span><span class="n">remove_done_jobs_from_replicas</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path_to_job_checks</span><span class="o">=</span><span class="s1">&#39;workdir/job_checks.txt&#39;</span><span class="p">)</span>
+<span class="n">project</span><span class="o">.</span><span class="n">create_hpc_submission_adjust_to_correct_density</span><span class="p">(</span>
+                    <span class="n">hpc_workspace</span><span class="o">=</span><span class="s2">&quot;/hpc/workspace/&quot;</span><span class="p">,</span>
+                    <span class="n">hpc_folder</span><span class="o">=</span><span class="s2">&quot;/hpc/workspace/molecule_mixture_project&quot;</span><span class="p">,</span>
+                    <span class="n">hpc_scripts_folder</span><span class="o">=</span><span class="s2">&quot;/hpc/workspace/HPC&quot;</span><span class="p">,</span>
+                    <span class="n">environment_name</span><span class="o">=</span><span class="s1">&#39;conda_env_simulation&#39;</span><span class="p">,</span>
+                    <span class="n">scheduler</span><span class="o">=</span><span class="s1">&#39;SBATCH&#39;</span><span class="p">,</span>
+                    <span class="n">partition</span><span class="o">=</span><span class="s1">&#39;accelerated&#39;</span><span class="p">,</span>
+                    <span class="n">number_of_threads</span><span class="o">=</span><span class="mi">152</span><span class="p">,</span>
+                    <span class="n">number_of_gpus</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span>
+                    <span class="n">chunk_size</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span>
+                    <span class="n">max_runtime_hh_mm_ss</span><span class="o">=</span><span class="s1">&#39;24:00:00&#39;</span><span class="p">,</span>
+                    <span class="n">conda_module</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                    <span class="n">chain_submission_number</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>              
+                    <span class="n">dependency_type</span><span class="o">=</span><span class="s1">&#39;afternotok&#39;</span><span class="p">,</span>
+                    <span class="n">checkpoint_frequency</span><span class="o">=</span><span class="mi">500000</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">remove_done_jobs_from_replicas</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path_to_job_checks</span><span class="o">=</span><span class="s1">&#39;workdir/job_checks.txt&#39;</span><span class="p">)</span>
+<span class="n">project</span><span class="o">.</span><span class="n">create_hpc_submission_simulate</span><span class="p">(</span>
+                    <span class="n">hpc_workspace</span><span class="o">=</span><span class="s2">&quot;/hpc/workspace/&quot;</span><span class="p">,</span>
+                    <span class="n">hpc_folder</span><span class="o">=</span><span class="s2">&quot;/hpc/workspace/molecule_mixture_project&quot;</span><span class="p">,</span>
+                    <span class="n">hpc_scripts_folder</span><span class="o">=</span><span class="s2">&quot;/hpc/workspace/HPC&quot;</span><span class="p">,</span>
+                    <span class="n">environment_name</span><span class="o">=</span><span class="s1">&#39;conda_env_simulation&#39;</span><span class="p">,</span>
+                    <span class="n">scheduler</span><span class="o">=</span><span class="s1">&#39;SBATCH&#39;</span><span class="p">,</span>
+                    <span class="n">partition</span><span class="o">=</span><span class="s1">&#39;accelerated&#39;</span><span class="p">,</span>
+                    <span class="n">number_of_threads</span><span class="o">=</span><span class="mi">152</span><span class="p">,</span>
+                    <span class="n">number_of_gpus</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span>
+                    <span class="n">chunk_size</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span>
+                    <span class="n">max_number_of_jobs</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span>
+                    <span class="n">max_runtime_hh_mm_ss</span><span class="o">=</span><span class="s1">&#39;24:00:00&#39;</span><span class="p">,</span>
+                    <span class="n">conda_module</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                    <span class="n">chain_submission_number</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>              
+                    <span class="n">dependency_type</span><span class="o">=</span><span class="s1">&#39;afternotok&#39;</span><span class="p">,</span>
+                    <span class="n">checkpoint_frequency</span><span class="o">=</span><span class="mi">500000</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+</div>
+</div>
+</div>
+</div>
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th>argument</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>hpc_workspace</td>
+<td>The path to the hpc workspace.</td>
+</tr>
+<tr>
+<td>hpc_folder</td>
+<td>The path to the project folder on the hpc.</td>
+</tr>
+<tr>
+<td>hpc_scripts_folder</td>
+<td>The path to the python scripts folder.</td>
+</tr>
+<tr>
+<td>environment_name</td>
+<td>The name of the anaconda environment containing the dependencies.</td>
+</tr>
+<tr>
+<td>scheduler</td>
+<td>The queue scheduler.</td>
+</tr>
+<tr>
+<td>partition</td>
+<td>The partition the job should be submitted to.</td>
+</tr>
+<tr>
+<td>number_of_threads</td>
+<td>The number of requested threads.</td>
+</tr>
+<tr>
+<td>number_of_gpus</td>
+<td>The number of GPUs requested on a node.</td>
+</tr>
+<tr>
+<td>chunk_size</td>
+<td>Number of simulations to submit in a chunk, should correspond to the number of requested GPUs.</td>
+</tr>
+<tr>
+<td>max_runtime_hh_mm_ss</td>
+<td>Maximum runtime for a job.</td>
+</tr>
+<tr>
+<td>which_hpc</td>
+<td>The HPC the script should be run on, currently supported are 'bwUniCluster2.0' and 'HoreKa'.</td>
+</tr>
+<tr>
+<td>chain_submission_number</td>
+<td>The number of job submissions that should be submitted as a sequential chain job.</td>
+</tr>
+<tr>
+<td>dependency_type</td>
+<td>Dependency keyword of the SLURM workload manager for chain jobs.</td>
+</tr>
+<tr>
+<td>checkpoint_frequency</td>
+<td>The frequency at which checkpoints are saved to restart from once a chain job continues.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<p>After transferring the folder with the job submission scripts to the high-performance computing center, they are submitted from <em>via</em> the terminal. </p>
+<div class="tabbed-set tabbed-alternate" data-tabs="9:2"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><input id="__tabbed_9_2" name="__tabbed_9" type="radio" /><div class="tabbed-labels"><label for="__tabbed_9_1">NpT equilibration</label><label for="__tabbed_9_2">NVT equilibration and NVE production</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>bash submit_adjust_to_correct_density.sh
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>bash submit_simulate.sh
+</code></pre></div></td></tr></table></div>
+</div>
+</div>
+</div>
+<p>However, nodes can only be occupied for a limited period of time. This leads to the fact that simulations have to be interrupted and resumed. This is implemented as follows with simulation checkpoints:</p>
+<p><img alt="Checkpoint scheme" src="../graphics/checkpoint_scheme.svg" /></p>
+<p>Since the queues only allow a limited number of job submissions at once, the number of generated job submission scripts is limited to this. Thus, the project is submitted in multiple submission cycles to work through the required simulations. All in all, the simulation takes place on a high-performance data center according to the following scheme:</p>
+<p><img alt="HPC simulation scheme" src="../graphics/hpc_simulation_scheme.svg" /></p>
+<p>After each simulation cycle on the high-performance data center, the status of the simulations is checked with the job checker. </p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">project</span><span class="o">.</span><span class="n">hpc_job_checker</span><span class="p">(</span> 
+    <span class="n">hpc_folder</span><span class="o">=</span><span class="s2">&quot;/hpc/workspace/molecule_mixture_project&quot;</span><span class="p">,</span> 
+    <span class="n">hpc_scripts_folder</span><span class="o">=</span><span class="s2">&quot;/hpc/workspace/HPC&quot;</span><span class="p">,</span> 
+    <span class="n">hpc_workspace</span><span class="o">=</span><span class="s2">&quot;/hpc/workspace/&quot;</span><span class="p">,</span> 
+    <span class="n">environment_name</span><span class="o">=</span><span class="s1">&#39;conda_env_simulation&#39;</span><span class="p">,</span> 
+    <span class="n">output</span><span class="o">=</span><span class="s1">&#39;verbose&#39;</span><span class="p">,</span>
+    <span class="n">energy_shift_tolerance_percent</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<p>In addition to the percentage progress of each replica, the average temperature and the percentage deviation of the total energy are determined. At the end of the output txt file, it is summarized how many of the replicas are finished and how many still need to run. In addition, if the given limit for the deviation of the total energy of one or more replicas is exceeded, a warning is added with the name of the replica. With the information about replicas already completed and replicas still to be run, the job submissions of the next simulation cycle are created. The job checker is launched with:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>batch job_checker.sh
+</code></pre></div></td></tr></table></div>
+<h2 id="analysis">Analysis<a class="headerlink" href="#analysis" title="Permanent link">&para;</a></h2>
+<p>Just as for the simulations, job submissions are generated for the analyses, which are then transferred to the high-performance computing center. The density analysis is then submitted in one step, it refers only to the NpT equilibration phase.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="10:2"><input checked="checked" id="__tabbed_10_1" name="__tabbed_10" type="radio" /><input id="__tabbed_10_2" name="__tabbed_10" type="radio" /><div class="tabbed-labels"><label for="__tabbed_10_1">example methanol/water mixture</label><label for="__tabbed_10_2">argument details</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">project</span><span class="o">.</span><span class="n">create_hpc_submission_analyze_density</span><span class="p">(</span>
+    <span class="n">hpc_workspace</span><span class="o">=</span><span class="s2">&quot;/hpc/workspace/&quot;</span><span class="p">,</span>
+    <span class="n">hpc_folder</span><span class="o">=</span><span class="s2">&quot;/hpc/workspace/molecule_mixture_project&quot;</span><span class="p">,</span>
+    <span class="n">hpc_scripts_folder</span><span class="o">=</span><span class="s2">&quot;/hpc/workspace/HPC&quot;</span><span class="p">,</span>
+    <span class="n">environment_name</span><span class="o">=</span><span class="s1">&#39;conda_env_analysis&#39;</span><span class="p">,</span>
+    <span class="n">scheduler</span><span class="o">=</span><span class="s1">&#39;SBATCH&#39;</span><span class="p">,</span>
+    <span class="n">partition</span><span class="o">=</span><span class="s1">&#39;cpuonly&#39;</span><span class="p">,</span>
+    <span class="n">number_of_threads</span><span class="o">=</span><span class="mi">152</span><span class="p">,</span>
+    <span class="n">max_runtime_hh_mm_ss</span><span class="o">=</span><span class="s1">&#39;00:10:00&#39;</span><span class="p">,</span>
+    <span class="n">conda_module</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th>argument</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>hpc_workspace</td>
+<td>The path to the hpc workspace.</td>
+</tr>
+<tr>
+<td>hpc_folder</td>
+<td>The path to the project folder on the hpc.</td>
+</tr>
+<tr>
+<td>hpc_scripts_folder</td>
+<td>The path to the python scripts folder.</td>
+</tr>
+<tr>
+<td>environment_name</td>
+<td>The name of the anaconda environment containing the dependencies.</td>
+</tr>
+<tr>
+<td>scheduler</td>
+<td>The queue scheduler.</td>
+</tr>
+<tr>
+<td>partition</td>
+<td>The partition the job should be submitted to.</td>
+</tr>
+<tr>
+<td>number_of_threads</td>
+<td>The number of requested threads.</td>
+</tr>
+<tr>
+<td>max_runtime_hh_mm_ss</td>
+<td>Maximum runtime for a job.</td>
+</tr>
+<tr>
+<td>which_hpc</td>
+<td>The HPC the script should be run on, currently supported are 'bwUniCluster2.0' and 'HoreKa'.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<p>Launch it with:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>batch submit_density_analysis.sh
+</code></pre></div></td></tr></table></div>
+<p>The two much more computationally intensive analyses on self-diffusion coefficients, viscosity, and hydrogen bonds do not take place in multiple rounds as do the simulations; however, it can be decided here how many queue submissions an analysis will be distributed among. In addition to the submission, the analysis is concluded after the submitted jobs are completed.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="11:2"><input checked="checked" id="__tabbed_11_1" name="__tabbed_11" type="radio" /><input id="__tabbed_11_2" name="__tabbed_11" type="radio" /><div class="tabbed-labels"><label for="__tabbed_11_1">example methanol/water mixture</label><label for="__tabbed_11_2">argument details</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">project</span><span class="o">.</span><span class="n">create_hpc_submission_analyze_msd</span><span class="p">(</span>
+    <span class="n">hpc_workspace</span><span class="o">=</span><span class="s2">&quot;/hpc/workspace/&quot;</span><span class="p">,</span>
+    <span class="n">hpc_folder</span><span class="o">=</span><span class="s2">&quot;/hpc/workspace/molecule_mixture_project&quot;</span><span class="p">,</span>
+    <span class="n">hpc_scripts_folder</span><span class="o">=</span><span class="s2">&quot;/hpc/workspace/HPC&quot;</span><span class="p">,</span>
+    <span class="n">environment_name</span><span class="o">=</span><span class="s1">&#39;conda_env_analysis&#39;</span><span class="p">,</span>
+    <span class="n">scheduler</span><span class="o">=</span><span class="s1">&#39;SBATCH&#39;</span><span class="p">,</span>
+    <span class="n">partition</span><span class="o">=</span><span class="s1">&#39;cpuonly&#39;</span><span class="p">,</span>
+    <span class="n">number_of_threads</span><span class="o">=</span><span class="mi">152</span><span class="p">,</span>
+    <span class="n">parallel_running</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span>
+    <span class="n">submission_split</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span>
+    <span class="n">max_runtime_hh_mm_ss</span><span class="o">=</span><span class="s1">&#39;24:00:00&#39;</span><span class="p">,</span>
+    <span class="n">conda_module</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="n">fit_starting_percentage</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span>
+    <span class="n">fit_ending_percentage</span><span class="o">=</span><span class="mi">80</span><span class="p">,</span>
+    <span class="n">just_conclude</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th>argument</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>hpc_workspace</td>
+<td>The path to the hpc workspace.</td>
+</tr>
+<tr>
+<td>hpc_folder</td>
+<td>The path to the project folder on the hpc.</td>
+</tr>
+<tr>
+<td>hpc_scripts_folder</td>
+<td>The path to the python scripts folder.</td>
+</tr>
+<tr>
+<td>environment_name</td>
+<td>The name of the anaconda environment containing the dependencies.</td>
+</tr>
+<tr>
+<td>scheduler</td>
+<td>The queue scheduler.</td>
+</tr>
+<tr>
+<td>partition</td>
+<td>The partition the job should be submitted to.</td>
+</tr>
+<tr>
+<td>number_of_threads</td>
+<td>The number of requested threads.</td>
+</tr>
+<tr>
+<td>parallel_running</td>
+<td>The number of replica analyses running in parallel.</td>
+</tr>
+<tr>
+<td>submission_split</td>
+<td>The number of job submissions the analysis is split in.</td>
+</tr>
+<tr>
+<td>max_runtime_hh_mm_ss</td>
+<td>Maximum runtime for a job.</td>
+</tr>
+<tr>
+<td>which_hpc</td>
+<td>The HPC the script should be run on, currently supported are 'bwUniCluster2.0' and 'HoreKa'.</td>
+</tr>
+<tr>
+<td>fit_starting_percentage</td>
+<td>Start of the linear fit in percent of NVE production duration.</td>
+</tr>
+<tr>
+<td>fit_ending_percentage</td>
+<td>Ending of the linear fit in percent of NVE production duration.</td>
+</tr>
+<tr>
+<td>just_conclude</td>
+<td>If true, skips the generation of job submissions scripts and just generates the conclude script.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<p>Launch it with:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>batch submit_msd_analysis.sh
+batch conclude_msd.sh
+</code></pre></div></td></tr></table></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="12:2"><input checked="checked" id="__tabbed_12_1" name="__tabbed_12" type="radio" /><input id="__tabbed_12_2" name="__tabbed_12" type="radio" /><div class="tabbed-labels"><label for="__tabbed_12_1">example methanol/water mixture</label><label for="__tabbed_12_2">argument details</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">project</span><span class="o">.</span><span class="n">create_hpc_submission_analyze_hbonds</span><span class="p">(</span>
+    <span class="n">hpc_workspace</span><span class="o">=</span><span class="s2">&quot;/hpc/workspace/&quot;</span><span class="p">,</span>
+    <span class="n">hpc_folder</span><span class="o">=</span><span class="s2">&quot;/hpc/workspace/molecule_mixture_project&quot;</span><span class="p">,</span>
+    <span class="n">hpc_scripts_folder</span><span class="o">=</span><span class="s2">&quot;/hpc/workspace/HPC&quot;</span><span class="p">,</span>
+    <span class="n">environment_name</span><span class="o">=</span><span class="s1">&#39;conda_env_analysis&#39;</span><span class="p">,</span>
+    <span class="n">scheduler</span><span class="o">=</span><span class="s1">&#39;SBATCH&#39;</span><span class="p">,</span>
+    <span class="n">partition</span><span class="o">=</span><span class="s1">&#39;cpuonly&#39;</span><span class="p">,</span>
+    <span class="n">number_of_threads</span><span class="o">=</span><span class="mi">152</span><span class="p">,</span>
+    <span class="n">parallel_running</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span>
+    <span class="n">submission_split</span><span class="o">=</span><span class="mi">25</span><span class="p">,</span>
+    <span class="n">max_runtime_hh_mm_ss</span><span class="o">=</span><span class="s1">&#39;24:00:00&#39;</span><span class="p">,</span>
+    <span class="n">conda_module</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="n">donors</span><span class="o">=</span><span class="s1">&#39;resname HOH and name O or resname Me and name O&#39;</span><span class="p">,</span>
+    <span class="n">hydrogens</span><span class="o">=</span><span class="s1">&#39;resname HOH and name H1 H2 or resname Me and name H2&#39;</span><span class="p">,</span>
+    <span class="n">acceptors</span><span class="o">=</span><span class="s1">&#39;resname HOH and name O or resname Me and name O&#39;</span><span class="p">,</span>
+    <span class="n">just_conclude</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th>argument</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>hpc_workspace</td>
+<td>The path to the hpc workspace.</td>
+</tr>
+<tr>
+<td>hpc_folder</td>
+<td>The path to the project folder on the hpc.</td>
+</tr>
+<tr>
+<td>hpc_scripts_folder</td>
+<td>The path to the python scripts folder.</td>
+</tr>
+<tr>
+<td>environment_name</td>
+<td>The name of the anaconda environment containing the dependencies.</td>
+</tr>
+<tr>
+<td>scheduler</td>
+<td>The queue scheduler.</td>
+</tr>
+<tr>
+<td>partition</td>
+<td>The partition the job should be submitted to.</td>
+</tr>
+<tr>
+<td>number_of_threads</td>
+<td>The number of requested threads.</td>
+</tr>
+<tr>
+<td>parallel_running</td>
+<td>The number of replica analyses running in parallel.</td>
+</tr>
+<tr>
+<td>submission_split</td>
+<td>The number of job submissions the analysis is split in.</td>
+</tr>
+<tr>
+<td>max_runtime_hh_mm_ss</td>
+<td>Maximum runtime for a job.</td>
+</tr>
+<tr>
+<td>which_hpc</td>
+<td>The HPC the script should be run on, currently supported are 'bwUniCluster2.0' and 'HoreKa'.</td>
+</tr>
+<tr>
+<td>donors</td>
+<td>Selection of all hydrogen bond donor atoms in MDAnalysis selection syntax.</td>
+</tr>
+<tr>
+<td>hydrogens</td>
+<td>Selection of all hydrogen bond hydrogen atoms in MDAnalysis selection syntax.</td>
+</tr>
+<tr>
+<td>acceptors</td>
+<td>Selection of all hydrogen bond acceptor atoms in MDAnalysis selection syntax.</td>
+</tr>
+<tr>
+<td>just_conclude</td>
+<td>If true, skips the generation of job submissions scripts and just generates the conclude script.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<p>Launch it with:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>batch submit_hbonds_analysis.sh
+batch conclude_hbonds.sh
+</code></pre></div></td></tr></table></div>
+<p>The results of the analyses are each stored in a JSON file that contains metadata for the project in addition to the measurement points, as well as metadata for each individual measurement point. These JSON files are stored inside the results folder. A completed project has the following folder structure with corresponding files:</p>
+<p><img alt="Folder Structure" src="../graphics/folder_structure.svg" /></p>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      2022-06-20
+    
+  </small>
+</div>
+
+              
+
+            </article>
+            
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../installation/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Installation" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Installation
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../scientific/" class="md-footer__link md-footer__link--next" aria-label="Next: Scientific background" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Scientific background
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "search.highlight", "navigation.tabs", "navigation.top"], "search": "../assets/javascripts/workers/search.85cb4492.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.a877e258.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
