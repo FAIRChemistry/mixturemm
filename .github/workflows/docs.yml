@@ -9,9 +9,11 @@ jobs:
         steps:
             - uses: actions/checkout@v2
             - uses: actions/setup-python@v2
-            - uses: s-weigand/setup-conda@v1
               with:
                   python-version: 3.8
+            - uses: s-weigand/setup-conda@v1
+              with:
+                  activate-conda: false
             - name: Install dependencies
               run: |
                   conda activate base
