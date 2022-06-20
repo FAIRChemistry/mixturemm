@@ -12,11 +12,10 @@ jobs:
               with:
                   python-version: 3.8
             - uses: s-weigand/setup-conda@v1
-              with:
-                  activate-conda: false
             - name: Install dependencies
               run: |
-                  conda activate base
+                  conda --version
+                  which python
                   conda install -c conda-forge openmm
                   conda install -c omnia packmol
                   conda install -c conda-forge mdanalysis
@@ -25,8 +24,9 @@ jobs:
                   conda install -c conda-forge tidynamics
             - name: PKG-TEST
               run: |
+                  conda --version
+                  which python
                   python -m unittest discover tests/
-                  conda activate base
                   python -m pip install --upgrade pip
                   pip install mkdocs-material mkdocstrings mkdocs-git-revision-date-plugin mkdocs-jupyter ipykernel
                   mkdocs gh-deploy --force
