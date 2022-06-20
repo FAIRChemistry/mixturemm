@@ -23,8 +23,9 @@ jobs:
             - name: PKG-TEST
               run: |
                   python -m unittest discover tests/
-            - run: $CONDA/bin/conda init bash
-            - run: $CONDA/bin/conda activate base
-            - run: python -m pip install --upgrade pip
-            - run: pip install mkdocs-material mkdocstrings mkdocs-git-revision-date-plugin mkdocs-jupyter ipykernel
-            - run: mkdocs gh-deploy --force
+              run: |
+                  $CONDA/bin/conda init bash
+                  $CONDA/bin/conda activate base
+                  python -m pip install --upgrade pip
+                  pip install mkdocs-material mkdocstrings mkdocs-git-revision-date-plugin mkdocs-jupyter ipykernel
+                  mkdocs gh-deploy --force
