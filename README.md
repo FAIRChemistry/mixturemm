@@ -14,10 +14,12 @@ Please take a look at the [documentation](https://FAIRChemistry.github.io/mixtur
 >-   creates predefined folder structure  
 >-   packs simulation boxes (by [packmol](https://github.com/m3g/packmol))  
 >-   stores short project description with metadata and input parameters as JSON  
+>  
 >**Simulation**  
 >-   with the fast simulation engine [OpenMM](https://openmm.org/)  
 >-   NpT to NVT to NVE ensemble according to simulation **Best Practices**  
 >-   semi-automated job submission to High Performance Computing Centers *via* SLURM  
+>  
 >**Analyses**  
 >-   density  
 >-   self-diffusion-coefficients as well as finite size corrected self-diffusion-coefficient  
