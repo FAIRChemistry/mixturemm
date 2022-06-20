@@ -1,4 +1,8 @@
- 
-# mixturemm module
+---
+hide:
+  - toc
+---
+
+# mixturemm
 
 ::: mixturemm.mixturemm
